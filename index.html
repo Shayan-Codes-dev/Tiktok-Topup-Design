@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Neo-Boost | Go Viral Instantly</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        neon: { cyan: '#00FFFF', magenta: '#FF00FF' },
+                        primary: '#FF00FF',
+                        accent: '#00FFFF',
+                    },
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+        body { background: #050505; color: #ffffff; overflow-x: hidden; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.15); }
+        .hero { background: linear-gradient(rgba(5,5,5,0.85), rgba(5,5,5,0.85)), url('https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat; }
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .glow-hover:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2); }
+        
+        input[type="range"] { @apply w-full h-2 bg-white/10 rounded-lg appearance-none cursor-pointer; accent-color: #FF00FF; }
+        .promo-gradient { background: linear-gradient(135deg, #FF00FF, #00FFFF); background-size: 200% 200%; animation: gradientShift 8s ease infinite; }
+        @keyframes gradientShift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+    </style>
+</head>
+<body class="pt-20">
+
+    <header class="fixed top-0 left-0 w-full glass z-50 border-b border-white/10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-3xl font-extrabold tracking-tight">NEO<span class="text-accent">BOOST</span></div>
+            
+            <nav class="hidden md:flex space-x-8 font-semibold">
+                <a href="#" class="hover:text-accent transition">Home</a>
+                <a href="#services" class="hover:text-accent transition">Services</a>
+                <a href="#pricing" class="hover:text-accent transition">Pricing</a>
+                <a href="#about" class="hover:text-accent transition">About</a>
+            </nav>
+            
+            <div class="flex items-center space-x-6">
+                <button id="open-recharge" class="sm:flex items-center space-x-2 bg-accent/20 border border-accent/50 px-4 py-2 rounded-full text-sm font-bold hover:bg-accent/30 transition">
+    <i class="fas fa-plus-circle text-accent"></i>
+    <span>Wallet: <span class="text-white">00.0 Rs</span></span>
+</button>
+                <button id="menu-toggle" class="md:hidden text-2xl text-accent"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden glass border-t border-white/10 py-6 px-8 space-y-4">
+            <a href="#" class="block text-lg hover:text-accent">Home</a>
+            <a href="#services" class="block text-lg hover:text-accent">Services</a>
+            <a href="#pricing" class="block text-lg hover:text-accent">Pricing</a>
+            <a href="#about" class="block text-lg hover:text-accent">About</a>
+        </div>
+    </header>
+
+    <section class="hero min-h-screen flex items-center justify-center text-center px-6 reveal">
+        <div class="max-w-5xl">
+            <h1 class="text-5xl md:text-8xl font-extrabold mb-6">GO VIRAL <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary">INSTANTLY</span></h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-12">Premium TikTok growth delivered in seconds. Trigger the algorithm today.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#services" class="bg-primary text-black px-12 py-5 rounded-full font-extrabold text-xl hover:bg-primary/80 transition-all shadow-lg shadow-primary/50">Start Boosting</a>
+                <a href="#pricing" class="glass px-12 py-5 rounded-full font-extrabold hover:bg-white/10 transition">View Pricing</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 container mx-auto px-6">
+        <div class="text-center mb-16 reveal">
+            <h2 class="text-5xl font-extrabold mb-4">Our Boost Packs</h2>
+            <div class="h-1 w-32 bg-primary mx-auto"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+            <div class="glass p-10 rounded-3xl text-center glow-hover reveal" data-rate="10">
+                <div class="w-20 h-20 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6"><i class="fas fa-eye text-4xl text-accent"></i></div>
+                <h3 class="text-2xl font-bold mb-4">Instant Views</h3>
+                <div class="space-y-4">
+                    <input type="range" min="500" max="100000" step="500" value="1000" class="quantity-slider">
+                    <input type="number" value="1000" class="quantity-input w-full bg-white/5 border border-white/10 rounded-lg p-2 text-center">
+                    <p class="text-3xl font-bold text-accent price">10.00 Rs</p>
+                </div>
+                <button class="order-btn w-full py-4 bg-primary text-black font-extrabold rounded-xl mt-8">Order Now</button>
+            </div>
+
+            <div class="glass p-10 rounded-3xl text-center glow-hover reveal" data-rate="20">
+                <div class="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6"><i class="fas fa-heart text-4xl text-primary"></i></div>
+                <h3 class="text-2xl font-bold mb-4">Real Likes</h3>
+                <div class="space-y-4">
+                    <input type="range" min="100" max="50000" step="100" value="1000" class="quantity-slider">
+                    <input type="number" value="1000" class="quantity-input w-full bg-white/5 border border-white/10 rounded-lg p-2 text-center">
+                    <p class="text-3xl font-bold text-primary price">20.00 Rs</p>
+                </div>
+                <button class="order-btn w-full py-4 bg-primary text-black font-extrabold rounded-xl mt-8">Order Now</button>
+            </div>
+
+            <div class="glass p-10 rounded-3xl text-center glow-hover reveal" data-rate="50">
+                <div class="w-20 h-20 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6"><i class="fas fa-user-plus text-4xl text-accent"></i></div>
+                <h3 class="text-2xl font-bold mb-4">Followers</h3>
+                <div class="space-y-4">
+                    <input type="range" min="100" max="10000" step="50" value="1000" class="quantity-slider">
+                    <input type="number" value="1000" class="quantity-input w-full bg-white/5 border border-white/10 rounded-lg p-2 text-center">
+                    <p class="text-3xl font-bold text-accent price">50.00 Rs</p>
+                </div>
+                <button class="order-btn w-full py-4 bg-primary text-black font-extrabold rounded-xl mt-8">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-24 bg-white/5">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-12">Price List</h2>
+            <div class="glass overflow-hidden rounded-3xl">
+                <table class="w-full text-left">
+                    <thead class="bg-white/10">
+                        <tr>
+                            <th class="p-6">Service</th>
+                            <th class="p-6">Rate (per 1K)</th>
+                            <th class="p-6">Min Order</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-white/5">
+                        <tr><td class="p-6">TikTok Video Views</td><td class="p-6 text-accent">10 Rs</td><td class="p-6">500</td></tr>
+                        <tr><td class="p-6">TikTok Post Likes</td><td class="p-6 text-primary">20 Rs</td><td class="p-6">100</td></tr>
+                        <tr><td class="p-6">TikTok Profile Followers</td><td class="p-6 text-accent">50 Rs</td><td class="p-6">100</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="reveal">
+                <h2 class="text-5xl font-extrabold mb-6">Why NeoBoost?</h2>
+                <p class="text-gray-400 text-lg mb-8">We are the leading provider of automated TikTok marketing tools. Our system is designed to mimic organic growth, ensuring your account remains safe while you climb the trending page.</p>
+                <div class="grid grid-cols-2 gap-8">
+                    <div><h4 class="text-3xl font-bold text-primary">24/7</h4><p class="text-gray-500">Auto-Delivery</p></div>
+                    <div><h4 class="text-3xl font-bold text-accent">100%</h4><p class="text-gray-500">Safe Methods</p></div>
+                </div>
+            </div>
+            <div class="glass p-8 rounded-3xl reveal">
+                <h3 class="text-2xl font-bold mb-6 italic">"The algorithm started picking up my videos within 2 hours of using NeoBoost. Game changer!"</h3>
+                <p class="text-accent font-bold">- @ViralCreator_X</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-16 border-t border-white/10 text-center">
+        <div class="container mx-auto px-6">
+            <div class="text-3xl font-extrabold text-accent mb-6">NEOBOOST</div>
+            <p class="text-gray-500">© 2026 TikTok Neo-Boost. Not affiliated with TikTok.</p>
+        </div>
+    </footer>
+
+    <div id="order-modal" class="fixed inset-0 bg-black/95 hidden flex items-center justify-center z-[200] p-6 backdrop-blur-md">
+        <div class="glass p-10 rounded-3xl max-w-lg w-full relative">
+            <button class="close-order absolute top-6 right-6 text-2xl">×</button>
+            <h2 class="text-3xl font-bold mb-6">Confirm Order</h2>
+            <div class="bg-white/5 p-6 rounded-2xl mb-6">
+                <p class="text-lg">Service: <span id="modal-service" class="text-accent font-bold"></span></p>
+                <p class="text-lg">Amount: <span id="modal-qty" class="text-primary font-bold"></span></p>
+                <p class="text-xl mt-4">Total: <span id="modal-price" class="font-extrabold"></span></p>
+            </div>
+            <input type="url" placeholder="Paste TikTok Link Here" class="w-full bg-white/5 border border-white/20 p-5 rounded-xl mb-6 focus:border-accent outline-none">
+            <button class="w-full py-5 bg-primary text-black font-extrabold rounded-xl shadow-lg">Confirm & Pay</button>
+        </div>
+    </div>
+    <div id="recharge-modal" class="fixed inset-0 bg-black/95 hidden flex items-center justify-center z-[250] p-6 backdrop-blur-xl">
+    <div class="glass p-8 rounded-[2rem] max-w-md w-full relative border-accent/30 shadow-[0_0_50px_rgba(0,255,255,0.1)]">
+        <button id="close-recharge" class="absolute top-6 right-6 text-gray-400 hover:text-white text-2xl transition">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="text-center mb-8">
+            <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-accent/40">
+                <i class="fas fa-wallet text-2xl text-accent"></i>
+            </div>
+            <h2 class="text-3xl font-extrabold">Recharge Wallet</h2>
+            <p class="text-gray-400 text-sm mt-2">Add funds to your NeoBoost account</p>
+        </div>
+
+        <form id="recharge-form" class="space-y-6">
+            <div>
+                <label class="block text-sm font-semibold mb-3 ml-1">Enter Amount (Rs)</label>
+                <div class="relative">
+                    <span class="absolute left-5 top-1/2 -translate-y-1/2 text-accent font-bold">Rs</span>
+                    <input type="number" id="recharge-amount" placeholder="500" min="100" 
+                        class="w-full bg-white/5 border border-white/10 p-5 pl-12 rounded-2xl focus:border-accent outline-none text-xl font-bold transition">
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-sm font-semibold mb-3 ml-1">Select Payment Method</label>
+                <div class="grid grid-cols-2 gap-3">
+                    <label class="cursor-pointer group">
+                        <input type="radio" name="method" class="hidden peer" checked>
+                        <div class="bg-white/5 border border-white/10 p-4 rounded-xl flex items-center justify-center space-x-2 peer-checked:border-accent peer-checked:bg-accent/10 transition">
+                            <i class="fas fa-university text-lg text-gray-400 group-hover:text-accent"></i>
+                            <span class="font-bold">Easypaisa</span>
+                        </div>
+                    </label>
+                    <label class="cursor-pointer group">
+                        <input type="radio" name="method" class="hidden peer">
+                        <div class="bg-white/5 border border-white/10 p-4 rounded-xl flex items-center justify-center space-x-2 peer-checked:border-primary peer-checked:bg-primary/10 transition">
+                            <i class="fas fa-mobile-alt text-lg text-gray-400 group-hover:text-primary"></i>
+                            <span class="font-bold">JazzCash</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="w-full py-5 bg-gradient-to-r from-accent to-primary text-black font-extrabold rounded-2xl shadow-lg hover:opacity-90 transition transform hover:scale-[1.02]">
+                Generate Payment Request
+            </button>
+            
+            <p class="text-center text-xs text-gray-500">Minimum recharge: 100 Rs • Instant processing</p>
+        </form>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Mobile Menu
+            $('#menu-toggle').click(() => $('#mobile-menu').slideToggle());
+
+            // Scroll Reveal
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('active'); });
+            }, { threshold: 0.1 });
+            $('.reveal').each(function() { observer.observe(this); });
+
+            // Universal Card Update
+            function updateCard(card) {
+                const rate = parseFloat(card.data('rate'));
+                const qty = parseInt(card.find('.quantity-slider').val());
+                const price = (qty / 1000) * rate;
+                card.find('.quantity-input').val(qty);
+                card.find('.price').text(price.toFixed(2) + ' Rs');
+            }
+
+            $('.quantity-slider').on('input', function() {
+                updateCard($(this).closest('.glass'));
+            });
+
+            $('.quantity-input').on('input', function() {
+                const card = $(this).closest('.glass');
+                card.find('.quantity-slider').val($(this).val());
+                updateCard(card);
+            });
+
+            // Order Modal
+            $('.order-btn').click(function() {
+                const card = $(this).closest('.glass');
+                $('#modal-service').text(card.find('h3').text());
+                $('#modal-qty').text(card.find('.quantity-input').val());
+                $('#modal-price').text(card.find('.price').text());
+                $('#order-modal').fadeIn(300);
+            });
+
+            $('.close-order').click(() => $('#order-modal').fadeOut(300));
+
+            // Recharge Modal Logic
+$('#open-recharge').click(function() {
+    $('#recharge-modal').fadeIn(300).css('display', 'flex');
+});
+
+$('#close-recharge, #recharge-modal').click(function(e) {
+    if (e.target === this || $(e.target).closest('#close-recharge').length) {
+        $('#recharge-modal').fadeOut(300);
+    }
+});
+
+$('#recharge-form').submit(function(e) {
+    e.preventDefault();
+    const amount = $('#recharge-amount').val();
+    if(amount < 100) {
+        alert("Minimum recharge is 100 Rs");
+        return;
+    }
+    alert(`Redirecting to payment gateway for ${amount} Rs...`);
+    // Here you would redirect to your payment processor (Stripe, JazzCash API, etc)
+});
+        });
+    </script>
+</body>
+</html>
